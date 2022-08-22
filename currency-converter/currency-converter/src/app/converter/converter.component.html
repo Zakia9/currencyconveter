@@ -1,0 +1,23 @@
+<div class="container">
+    <h1> Currency Converter </h1>
+
+    <input type="number" placeholder="amount" [(ngModel)]="cadToUsAmount">
+
+    <label> From </label> <span> {{cad}} </span>
+    <label> To </label> <span> {{usd}} </span>
+
+    <br/><br/>
+
+    <b > {{ cadToUsAmount.toFixed(2) }} {{ cad }} = {{ convertCadToUsd().toFixed(2) }} {{ usd }} </b>
+</div>
+<br />
+<div class="container">
+    <input type="number" placeholder="amount" [(ngModel)]="cadToEuroAmount">
+
+    <label> From </label> <span> {{cad}} </span>
+    <label> To </label> <span> {{euro}} </span>
+
+    <br/><br/>
+
+    <b > {{ cadToEuroAmount.toFixed(2) }} {{ cad }} = {{ convertCadToEuro().toFixed(2) }} {{ euro }} </b>
+</div>
